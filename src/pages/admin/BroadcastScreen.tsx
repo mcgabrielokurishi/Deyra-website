@@ -27,6 +27,10 @@ export function LegacyBroadcastScreen({
         title: title.trim(),
         message: message.trim(),
         audience,
+        accountStatus: "active",
+        verification: "all",
+        sendViaEmail: true,
+        sendViaPush: true,
       }),
     onSuccess: (data) => {
       setSuccessId(data.id);
